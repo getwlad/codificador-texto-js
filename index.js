@@ -45,8 +45,7 @@ document.addEventListener(
   false
 );
 
-const criptografar = (texto) => {
-  let result = texto.toLowerCase();
+const criptografar = (text) => {
   let matrizCodigo = [
     ["e", "enter"],
     ["i", "imes"],
@@ -54,17 +53,18 @@ const criptografar = (texto) => {
     ["o", "ober"],
     ["u", "ufat"],
   ];
+  let result = text.toLowerCase();
+
   for (let i = 0; i < matrizCodigo.length; i++) {
     if (result.includes(matrizCodigo[i][0])) {
-      result = texto.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
+      result = result.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
     }
   }
 
   return result;
 };
 
-const decriptografar = (texto) => {
-  let result = texto.toLowerCase();
+const decriptografar = (text) => {
   let matrizCodigo = [
     ["e", "enter"],
     ["i", "imes"],
@@ -72,9 +72,11 @@ const decriptografar = (texto) => {
     ["o", "ober"],
     ["u", "ufat"],
   ];
+  let result = text.toLowerCase();
+
   for (let i = 0; i < matrizCodigo.length; i++) {
     if (result.includes(matrizCodigo[i][1])) {
-      result = texto.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
+      result = result.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
     }
   }
 
