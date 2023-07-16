@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador Javascript</title>
+  </head>
+  <body class="body">
+    <header>
+      <img src="alura.svg" class="logo-alura" />
+    </header>
+
+    <main class="main">
+      <section class="home">
+        <textarea
+          placeholder="Digite seu texto"
+          id="conv-text"
+          cols="41"
+          rows="4"
+        ></textarea>
+
+        <div class="conversor">
+          <div>
+            <p class="info">
+              <img src="info.svg" />Apenas letras minúsculas e sem acento.
+            </p>
+          </div>
+
+          <div class="buttons">
+            <button id="btn-cript" class="btn">Criptografar</button>
+            <button id="btn-descript"  class="btn" >Descriptografar</button>
+          </div>
+
+      </section>
+      <section class="resultado">
+        <div class="texto" id="semTexto">
+          <img src="boneco.svg" class="boneco"/>
+          <textarea class="p-sem-mensagem text-area">Nenhuma mensagem encontrada</textarea>
+          <p class="msg-info">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <div class="texto" id="comTexto">
+          <textarea class="mensagem p-sem-mensagem text-area" id="mensagem" ></textarea>
+          <button class="btn-copiar btn" id="copiar">Copiar</button>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer class="footer">
+    <p class="p-footer">Desenvolvido por Wladmir Rodrigues</p>
+  </footer>
+</html>
